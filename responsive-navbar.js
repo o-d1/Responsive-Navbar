@@ -1,7 +1,11 @@
-const icon = document.querySelector(".icon")
-const navItems = document.querySelector('.n')
+const button = document.getElementById('button')
+const nav = document.getElementById('navbar')
 
-icon.addEventListener("click", () => {
-    navItems.classList.toggle('toggle')
-    console.log('crap')
+button.addEventListener("click", () => {
+    // navItems.classList.toggle('toggle');
+    console.log('crap');
+    if (button.style.display = 'flex') {
+        nav.style.display = 'none';
+        console.log('it works')
+    }
 })
